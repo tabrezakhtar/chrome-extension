@@ -16,7 +16,7 @@ chrome.browserAction.onClicked.addListener( listener => {
     else {
 
         chrome.tabs.create( {
-            url:chrome.extension.getURL('popup.html'),
+            url:chrome.extension.getURL('main.html'),
             selected:true
         }, tab => {
             tabId = tab.id;
